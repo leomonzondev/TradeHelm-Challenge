@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Tradehelm](./public/logo.svg "TradeHelm")
 
-## Getting Started
+En el camino desde mi casa al supermercado, mi cerebro pierde la capacidad de retener información, por ende necesito hacer una aplicación que se encargue de esa difícil tarea. No, no puedo usar Google Keep, Evernote, nada, soy dev, la tengo que hacer, además esto es un challenge así que agarrá la pala.
 
-First, run the development server:
+### La aplicación debe:
+* Mostrar un formulario para agregar elementos a la lista.
+* Poder borrar cada elemento de la lista independientemente.
+* Mantener los elementos de la lista cuando vuelvo a la aplicación después de cerrarla.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+> En caso de guardar los datos solo en `localStorage`, se debe simular un delay al cargar, guardar y borrar los elementos, como si interactuaramos con un servicio externo.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Es necesario:
+* Cumplir con las reglas de linting del .eslintrc
+* Tipar el item de lista de supermercado.
+* Cumplir con las especificaciones visuales.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Es muy importante:
+* Pensar en la experiencia de usuario, minimizar la cantidad de interacciónes necesarias para usar la aplicación.
+* Ser ordenada/o a la hora de codear y estructurar archivos. Keep it simple.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### No es necesario, pero suma:
+* Tipar todos los elementos que usa la aplicación.
+* Agregar tests unitarios, con jest para funciones, con react-testing-library para componentes.
+* Agregar tests de integración, con Cypress o afínes.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Cualquier adicional que contribuya a la aplicación sin complicarla, suma, dark mode por ejemplo.
 
-## Learn More
+### Se puede usar:
+* Cualquier solución de estilos integrada o de fácil integración con `create-react-app` (CSS Modules, CSS Plano, SASS).
 
-To learn more about Next.js, take a look at the following resources:
+### Modalidad de entrega:
+* Repositorio público subido a GitHub, Gitlab, Bitbucket.
+* Link a la aplicación funcionando.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Ejemplos:
+> ![Vacío](./specs/vacio.png "Vacío")
+> ![Formulario](./specs/formulario.png "Formulario")
+> ![Lleno](./specs/lleno.png "Lleno")
