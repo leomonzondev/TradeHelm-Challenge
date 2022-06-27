@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 
-export const AddTask = ({props}) => {
+
+
+export const AddTask = ({props}:any) => {
 
 
     const { showAdd, setShowAdd, tasks, setTasks } = props
