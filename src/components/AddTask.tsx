@@ -86,7 +86,7 @@ export const AddTask = ({showAdd,tasks,setShowAdd,setTasks,}:inProp) => {
             : ""
         }
             <form onSubmit={(e) => handleAddItem(e)}>
-                <input onChange={(e) => handleInput(e)} value={inputValue} className='w-96 focus:outline-blue-400 p-3' placeholder='Writes here the item' />
+                <input autoFocus onChange={(e) => handleInput(e)} value={inputValue} className='w-96 focus:outline-blue-400 p-3' placeholder='Writes here the item' />
             </form>
             <div className='flex gap-4 mt-4 font-medium'>
                 <button className={`${buttonStyle} bg-gray-200`} onClick={handleClose}>Close</button>
