@@ -77,18 +77,18 @@ export const AddTask = ({showAdd,tasks,setShowAdd,setTasks,}:inProp) => {
     }
 
   return (
-    <div className='absolute w-full h-full bg-white/70 flex justify-center items-center'>
+    <div className='absolute w-full h-full bg-white/70 flex justify-center  items-center'>
 
-        <div className=' p-5 bg-white drop-shadow-lg rounded-md flex flex-col '>
+        <div className='  p-5 bg-white drop-shadow-lg rounded-md flex  flex-col '>
         {
             showAdd.id != 0
             ? <p className='font-bold text-2xl'>Update item</p>
             : ""
         }
             <form onSubmit={(e) => handleAddItem(e)}>
-                <input autoFocus onChange={(e) => handleInput(e)} value={inputValue} className='w-96 focus:outline-blue-400 p-3' placeholder='Writes here the item' />
+                <input autoFocus onChange={(e) => handleInput(e)} value={inputValue} className='md:w-96 w-full focus:outline-blue-400 p-3' placeholder='Writes here the item' />
             </form>
-            <div className='flex gap-4 mt-4 font-medium'>
+            <div className='flex gap-4 mt-4 font-medium flex-wrap md:flex-nowrap justify-center flex-col md:flex-row '>
                 <button className={`${buttonStyle} bg-gray-200`} onClick={handleClose}>Close</button>
                 <button className={`${buttonStyle} bg-blue-400 text-white`} onClick={(e) => handleAddItem(e )}>{updateState ? "Update" : "Add"} </button>
             </div>

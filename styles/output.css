@@ -590,6 +590,10 @@ video {
   height: 100%;
 }
 
+.max-h-screen {
+  max-height: 100vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -610,6 +614,14 @@ video {
   flex-direction: column;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -628,6 +640,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .rounded-sm {
@@ -670,6 +686,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -683,6 +703,19 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -756,4 +789,35 @@ video {
 
 .focus\:outline-blue-400:focus {
   outline-color: #60a5fa;
+}
+
+@media (min-width: 768px) {
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .md\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
